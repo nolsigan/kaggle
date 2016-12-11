@@ -1,6 +1,6 @@
 # Kaggle
 
-Nolsigan's code for kaggle completition using Tensorflow & keras!
+Nolsigan's code for kaggle competitions using Tensorflow & keras!
 
 Only deals with problems that can be solved with deep learning.
 
