@@ -46,8 +46,8 @@ def conv_simple():
     model.add(Activation('sigmoid'))
 
     # load weights if exists & compile
-    if os.path.isfile(Const.weight_checkpoint):
-        model.load_weights(Const.weight_checkpoint)
+    if os.path.isfile(Const.WEIGHT_CHECKPOINT):
+        model.load_weights(Const.WEIGHT_CHECKPOINT)
 
     model.compile(loss='binary_crossentropy', optimizer=RMSprop(lr=1e-4), metrics=['accuracy'])
 
