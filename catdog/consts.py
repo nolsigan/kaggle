@@ -6,7 +6,7 @@ consts.py
 
 class Const:
     # checkpoints
-    weight_checkpoint = 'weights-best.hdf5'
+    WEIGHT_CHECKPOINT = 'weights-best.hdf5'
 
     # image size
     CHANNELS = 3
