@@ -9,7 +9,7 @@ train module
     - checkpoints should include loss function name
 """
 # Import libraries
-from data import fetch_test_data
+from data import fetch_train_data
 from models import conv_simple
 from consts import Const
 
@@ -43,7 +43,7 @@ def run_train():
     :return: None
     """
     # fetch data
-    train, labels = fetch_test_data()
+    train, labels = fetch_train_data()
 
     # make model
     model = conv_simple()
