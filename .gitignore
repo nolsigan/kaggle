@@ -4,3 +4,5 @@ data/
 *.csv
 .idea/
 *.hdf5
+*.pyc
+*.out
