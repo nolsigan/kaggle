@@ -10,5 +10,9 @@ class Const:
 
     # image size
     CHANNELS = 3
-    ROWS = 128
-    COLS = 128
+    ROWS = 256
+    COLS = 256
+    
+    # constants
+    TRAIN_DIR = '/Users/Nolsigan/Documents/kaggle/data/catdog/train/'
+    TEST_DIR = '/Users/Nolsigan/Documents/kaggle/data/catdog/test/'

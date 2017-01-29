@@ -51,7 +51,7 @@ def run_train():
     # define callbacks
     early_stopping = EarlyStopping(monitor='val_loss', patience=3, verbose=1, mode='auto')
     history = LossHistory()
-    checkpoint = ModelCheckpoint(Const.weight_checkpoint, monitor='val_acc', verbose=1, save_best_only=True, mode='max')
+    checkpoint = ModelCheckpoint(Const.WEIGHT_CHECKPOINT, monitor='val_acc', verbose=1, save_best_only=True, mode='max')
 
     # run training
     model.fit(train, labels, batch_size=BATCH_SIZE, nb_epoch=EPOCHS,
