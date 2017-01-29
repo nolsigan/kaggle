@@ -35,7 +35,7 @@ def prepare_data(images):
 # fetch whole train data
 def fetch_train_data():
     # images paths
-    images_path = [Const.TRAIN_DIR+i for i in os.listdir(Const.TRAIN_DIR) if '.jpg' in i][:500]
+    images_path = [Const.TRAIN_DIR+i for i in os.listdir(Const.TRAIN_DIR) if '.jpg' in i]
     random.shuffle(images_path)
 
     # load images
