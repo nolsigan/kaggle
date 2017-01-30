@@ -10,7 +10,7 @@ train module
 """
 # Import libraries
 from data import fetch_train_data
-from models import conv_simple
+from models import simple_vgg
 from consts import Const
 
 from keras.callbacks import Callback, EarlyStopping, ModelCheckpoint
@@ -46,7 +46,7 @@ def run_train():
     train, labels = fetch_train_data()
 
     # make model
-    model = conv_simple()
+    model = simple_vgg()
 
     # define callbacks
     early_stopping = EarlyStopping(monitor='val_loss', patience=3, verbose=1, mode='auto')

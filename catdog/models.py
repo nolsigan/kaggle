@@ -12,7 +12,7 @@ from consts import Const
 import os
 
 
-def conv_simple():
+def simple_vgg():
     model = Sequential()
 
     # conv layer 1

@@ -9,7 +9,7 @@ test from weight checkpoint and write result to csv file
 import csv
 
 from data import fetch_test_data
-from models import conv_simple
+from models import simple_vgg
 
 # constants
 out_file = 'result.csv'
@@ -21,7 +21,7 @@ def run_test():
     test = fetch_test_data()
 
     # bring model
-    model = conv_simple()
+    model = simple_vgg()
 
     # run test
     predicts = model.predict(test, verbose=1)

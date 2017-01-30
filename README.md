@@ -4,6 +4,13 @@ Nolsigan's code for kaggle competitions using Tensorflow & keras!
 
 Only deals with problems that can be solved with deep learning.
 
+## Cat vs Dog
+
+* simple_vgg
+    * Uses simplified version of VGG
+    * After epoch 8, test loss still decreases but validation loss doesn't (overfitting)
+    * __Achieved 85.65% accuracy__
+
 ## MNIST
 
 * simple_nn.ipynb
