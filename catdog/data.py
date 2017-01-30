@@ -56,6 +56,11 @@ def fetch_test_data():
     # images paths
     images_path = [Const.TEST_DIR+i for i in os.listdir(Const.TEST_DIR) if '.jpg' in i]
 
+    # sort
+    images_path = sorted(images_path, key=lambda path: int(((path.split('.'))[0]).split('/')[-1]))
+
+    print images_path
+
     # load images
     data = prepare_data(images_path)
 
