@@ -8,7 +8,7 @@ Only deals with problems that can be solved with deep learning.
 
 * simple_vgg
     * Uses simplified version of VGG
-    * After epoch 8, test loss still decreases but validation loss doesn't (overfitting)
+    * After epoch 8, train loss still decreases but validation loss doesn't (overfitting)
     * __Achieved 85.65% accuracy__
 
 ## MNIST
